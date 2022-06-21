@@ -12,7 +12,7 @@ public class Vin implements ValueObject<String> {
         if (this.valor.isBlank()) {
             throw new IllegalArgumentException("El vin es requerido");
         }
-        if (this.valor.matches("^(?=.*[0-9])(?=.*[A-z])[0-9A-z-]{17}$")) {
+        if (!this.valor.matches("^(?=.*[0-9])(?=.*[A-z])[0-9A-z-]{17}$")) {
             throw new IllegalArgumentException("Ingresa un vin valido");
         }
     }
