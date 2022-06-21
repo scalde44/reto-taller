@@ -1,9 +1,11 @@
-package co.com.sofka.reto.repuesto;
+package co.com.sofka.reto.repuesto.usecases;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.reto.generic.values.Nombre;
 import co.com.sofka.reto.generic.values.Valor;
+import co.com.sofka.reto.repuesto.AsesorFactory;
+import co.com.sofka.reto.repuesto.ProveedorFactory;
 import co.com.sofka.reto.repuesto.commands.CrearRepuesto;
 import co.com.sofka.reto.repuesto.events.RepuestoCreado;
 import co.com.sofka.reto.repuesto.identities.AsesorId;

@@ -1,10 +1,12 @@
-package co.com.sofka.reto.ordentaller;
+package co.com.sofka.reto.ordentaller.usecases;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.reto.cliente.identities.ClienteId;
 import co.com.sofka.reto.generic.values.Nombre;
 import co.com.sofka.reto.generic.values.Valor;
+import co.com.sofka.reto.ordentaller.OperacionFactory;
+import co.com.sofka.reto.ordentaller.TecnicoFactory;
 import co.com.sofka.reto.ordentaller.commands.AbrirOrdenDeTaller;
 import co.com.sofka.reto.ordentaller.events.OrdenDeTallerAbierta;
 import co.com.sofka.reto.ordentaller.identities.OperacionId;

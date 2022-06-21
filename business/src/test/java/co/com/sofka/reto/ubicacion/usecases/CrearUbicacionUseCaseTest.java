@@ -1,7 +1,8 @@
-package co.com.sofka.reto.ubicacion;
+package co.com.sofka.reto.ubicacion.usecases;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
+import co.com.sofka.reto.ubicacion.UbicacionCreada;
 import co.com.sofka.reto.ubicacion.commands.CrearUbicacion;
 import co.com.sofka.reto.ubicacion.identities.EspacioId;
 import co.com.sofka.reto.ubicacion.usecases.CrearUbicacionUseCase;

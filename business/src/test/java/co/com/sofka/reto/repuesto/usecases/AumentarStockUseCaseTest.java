@@ -1,4 +1,4 @@
-package co.com.sofka.reto.repuesto;
+package co.com.sofka.reto.repuesto.usecases;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;

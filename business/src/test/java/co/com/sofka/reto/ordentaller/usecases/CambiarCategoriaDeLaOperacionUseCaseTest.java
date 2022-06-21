@@ -1,4 +1,4 @@
-package co.com.sofka.reto.ordentaller;
+package co.com.sofka.reto.ordentaller.usecases;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
