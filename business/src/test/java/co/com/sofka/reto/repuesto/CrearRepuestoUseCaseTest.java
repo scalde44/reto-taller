@@ -8,6 +8,7 @@ import co.com.sofka.reto.repuesto.commands.CrearRepuesto;
 import co.com.sofka.reto.repuesto.events.RepuestoCreado;
 import co.com.sofka.reto.repuesto.identities.AsesorId;
 import co.com.sofka.reto.repuesto.identities.ProveedorId;
+import co.com.sofka.reto.repuesto.usecases.CrearRepuestoUseCase;
 import co.com.sofka.reto.repuesto.values.Antiguedad;
 import co.com.sofka.reto.repuesto.values.ClasificacionTributaria;
 import co.com.sofka.reto.repuesto.values.Stock;

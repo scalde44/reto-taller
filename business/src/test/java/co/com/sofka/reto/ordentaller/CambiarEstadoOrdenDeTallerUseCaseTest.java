@@ -13,6 +13,7 @@ import co.com.sofka.reto.ordentaller.events.OrdenDeTallerAbierta;
 import co.com.sofka.reto.ordentaller.identities.OperacionId;
 import co.com.sofka.reto.ordentaller.identities.OrdenTallerId;
 import co.com.sofka.reto.ordentaller.identities.TecnicoId;
+import co.com.sofka.reto.ordentaller.usecases.CambiarEstadoOrdenDeTallerUseCase;
 import co.com.sofka.reto.ordentaller.values.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

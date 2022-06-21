@@ -13,6 +13,7 @@ import co.com.sofka.reto.ordentaller.events.OrdenDeTallerAbierta;
 import co.com.sofka.reto.ordentaller.identities.OperacionId;
 import co.com.sofka.reto.ordentaller.identities.OrdenTallerId;
 import co.com.sofka.reto.ordentaller.identities.TecnicoId;
+import co.com.sofka.reto.ordentaller.usecases.ActualizarEstadoDelTecnicoUseCase;
 import co.com.sofka.reto.ordentaller.values.Categoria;
 import co.com.sofka.reto.ordentaller.values.Especialidad;
 import co.com.sofka.reto.ordentaller.values.EstadoTecnico;

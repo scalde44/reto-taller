@@ -12,6 +12,7 @@ import co.com.sofka.reto.repuesto.events.StockDisminuido;
 import co.com.sofka.reto.repuesto.identities.AsesorId;
 import co.com.sofka.reto.repuesto.identities.ProveedorId;
 import co.com.sofka.reto.repuesto.identities.RepuestoId;
+import co.com.sofka.reto.repuesto.usecases.DisminuirStockUseCase;
 import co.com.sofka.reto.repuesto.values.Antiguedad;
 import co.com.sofka.reto.repuesto.values.ClasificacionTributaria;
 import co.com.sofka.reto.repuesto.values.Stock;

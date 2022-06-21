@@ -4,6 +4,7 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.reto.ubicacion.commands.CrearUbicacion;
 import co.com.sofka.reto.ubicacion.identities.EspacioId;
+import co.com.sofka.reto.ubicacion.usecases.CrearUbicacionUseCase;
 import co.com.sofka.reto.ubicacion.values.Categoria;
 import co.com.sofka.reto.ubicacion.values.Direccion;
 import co.com.sofka.reto.ubicacion.values.Estado;
