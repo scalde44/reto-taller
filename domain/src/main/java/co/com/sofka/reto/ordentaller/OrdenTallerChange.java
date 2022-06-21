@@ -25,26 +25,44 @@ public class OrdenTallerChange extends EventChange {
         });
 
         apply((NombreDelTecnicoCambiado event) -> {
+            if (!ordenTaller.tecnico.identity().equals(event.getTecnicoId())) {
+                throw new IllegalArgumentException("Tecnico no encontrado");
+            }
             ordenTaller.tecnico.cambiarNombre(event.getNombre());
         });
 
         apply((EspecialidadDelTecnicoCambiada event) -> {
+            if (!ordenTaller.tecnico.identity().equals(event.getTecnicoId())) {
+                throw new IllegalArgumentException("Tecnico no encontrado");
+            }
             ordenTaller.tecnico.cambiarEspecialidad(event.getEspecialidad());
         });
 
         apply((TemparioDeLaOperacionActualizado event) -> {
+            if (!ordenTaller.operacion.identity().equals(event.getOperacionId())) {
+                throw new IllegalArgumentException("Operacion no encontrada");
+            }
             ordenTaller.operacion.actualizarTempario(event.getTempario());
         });
 
         apply((CategoriaDeLaOperacionCambiada event) -> {
+            if (!ordenTaller.operacion.identity().equals(event.getOperacionId())) {
+                throw new IllegalArgumentException("Operacion no encontrada");
+            }
             ordenTaller.operacion.cambiarCategoria(event.getCategoria());
         });
 
         apply((ValorDeLaOperacionActualizado event) -> {
+            if (!ordenTaller.operacion.identity().equals(event.getOperacionId())) {
+                throw new IllegalArgumentException("Operacion no encontrada");
+            }
             ordenTaller.operacion.actualizarValor(event.getValor());
         });
 
         apply((EstadoDelTecnicoActualizado event) -> {
+            if (!ordenTaller.tecnico.identity().equals(event.getTecnicoId())) {
+                throw new IllegalArgumentException("Tecnico no encontrado");
+            }
             ordenTaller.tecnico.actualizarEstado(event.getEstadoTecnico());
         });
     }
