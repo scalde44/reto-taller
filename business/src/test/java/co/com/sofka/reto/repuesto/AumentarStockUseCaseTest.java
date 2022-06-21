@@ -6,13 +6,15 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.reto.generic.values.Nombre;
 import co.com.sofka.reto.generic.values.Valor;
+import co.com.sofka.reto.repuesto.commands.AumentarStock;
 import co.com.sofka.reto.repuesto.commands.DisminuirStock;
 import co.com.sofka.reto.repuesto.events.RepuestoCreado;
+import co.com.sofka.reto.repuesto.events.StockAumentado;
 import co.com.sofka.reto.repuesto.events.StockDisminuido;
 import co.com.sofka.reto.repuesto.identities.AsesorId;
 import co.com.sofka.reto.repuesto.identities.ProveedorId;
 import co.com.sofka.reto.repuesto.identities.RepuestoId;
-import co.com.sofka.reto.repuesto.usecases.DisminuirStockUseCase;
+import co.com.sofka.reto.repuesto.usecases.AumentarStockUseCase;
 import co.com.sofka.reto.repuesto.values.Antiguedad;
 import co.com.sofka.reto.repuesto.values.ClasificacionTributaria;
 import co.com.sofka.reto.repuesto.values.Stock;
@@ -29,18 +31,18 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
-class DisminuirStockUseCaseTest {
+class AumentarStockUseCaseTest {
     @Mock
     DomainEventRepository repository;
     @InjectMocks
-    DisminuirStockUseCase useCase;
+    AumentarStockUseCase useCase;
 
     @Test
-    void disminuirStock() {
+    void aumentarStock() {
         //arrange
         var repuestoId = RepuestoId.of("REP001");
         var stock = new Stock(2);
-        var command = new DisminuirStock(repuestoId, stock);
+        var command = new AumentarStock(repuestoId, stock);
         Mockito.when(repository.getEventsBy(repuestoId.value())).thenReturn(history());
         useCase.addRepository(repository);
 
@@ -51,7 +53,7 @@ class DisminuirStockUseCaseTest {
                 .getDomainEvents();
 
         //assert
-        var event = (StockDisminuido) events.get(0);
+        var event = (StockAumentado) events.get(0);
         Assertions.assertEquals(2, event.getStock().value());
     }
 
